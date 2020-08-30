@@ -1,0 +1,21 @@
+body{
+
+    font-family:'lato',sans-serif;
+    background-color: rgb(230, 219, 219) ;
+
+
+}
+#quiz{
+
+    margin-left:  50px;
+    background: #7b91ce;
+    padding:10px 20px 10px 20px;
+    width: 300px;
+    border-radius: 30px;
+    float: centter;
+
+}
+
+#after_Submit{
+    visibility: hidden;
+}

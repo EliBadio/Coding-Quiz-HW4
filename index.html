@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on Timer</title>
+    <link href ="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="startTime"></h1>
+    <div id="main"></div>
+    
+    <h1> Main Quiz</h1>
+    <form id = "quiz" name = "quiz">
+
+      
+
+        <p> What is the capital of NY?</p>
+        <input id="textbox" type= "text" name= "questions1">
+
+        <p> What is the capital of CT?</p>
+        <input type="radio" id= "mc" name= "questions2" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions2" value = "Hartford"> Danbury<br>
+         <input type="radio" id= "mc" name= "questions2" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions2" value = "Hartford"> Danbury<br>
+
+        <p> What is the capital of NJ?</p>
+        <input type="radio" id= "mc" name= "questions3" value = "Hartford"> NJ<br>
+        <input type="radio" id= "mc" name= "questions3" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions3" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions3" value = "Hartford"> Hartford<br>
+
+        <p> What is the capital of FL?</p>
+        <input type="radio" id= "mc" name= "questions4" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions4" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions4" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions4" value = "Hartford"> Hartford<br>
+        
+        <p> What is the capital of RI?</p>
+        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Hartford<br>
+        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Hartford<br>
+
+        <input id =" btton" type = "button" value =" I'm finished!" onclick = "check();">
+    </form>
+    
+    <div id ="after_Submit">
+    <p id ="message"> </p>
+    <img id =" picture">
+    
+    </div>
+        <p id ="number_Correct"> </p>
+    </div>
+
+
+     <script src="script.js"> </script>
+</body>
+</html>
