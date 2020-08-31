@@ -1,85 +1,132 @@
-var timeEl = document.querySelector(".time");
-var mainEl = document.getElementById("main");
+var options001 = ["<button class=buttons001 onclick=q1i()>True</button><br /><br /><button class=buttons001 onclick=q1c()>False</button>"];
+var options002 = ["<button class=buttons001 onclick=q2c()>False</button><br /><br /><button class=buttons001 onclick=q2i()>True</button>"];
+var options003 = ["<button class=buttons001 onclick=q3c()>True</button><br /><br /><button class=buttons001 onclick=q3i()>False</button>"];
+var start01="",
+var a = 0;
+a++;
+var b = 0;
+b++;
+var question001 = ["What is a function that call itself.",
+"A regular binding where the value of the biding is a function.",
+"When statements on a program are executed from top to botton, it is an example of.","What type of data use to represent text?",
+"Blank is a fragment that produces a value?"
+]
 
-var secondsLeft = 500;
-
-function setTime() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
-
-    if(secondsLeft === 0) {
-      clearInterval(timerInterval);
-      sendMessage();
+function start01() {
+    c = 200;
+    disappear001.innerHTML = "";
+    message001.innerHTML = question001[0];
+    message002.innerHTML = options001;
+    number001.innerHTML = a++;
     }
-
-  }, 1000);
-}
-
-function sendMessage() {
-  timeEl.textContent = " Time has been Expired";
-
-  //var imgEl = document.createElement("img");
-
- // imgEl.setAttribute("src", "images/image_1.jpg");
-  //mainEl.appendChild(imgEl);
-
-}
-
-
-
-
-
-
-function startTimer(){
-document.getElementById("#mc").style.visibility="visible";
+    
+    function q1c() {
+    message003.innerHTML = "Correct. Function.";
+    message002.innerHTML = "";
+    score001.innerHTML = a++;
+    message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+    }
+    
+    function q1i() {
+    message003.innerHTML = "Incorrect.function.";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+    }
+    
+    function q2c() {
+    message003.innerHTML = "Correct. Recursion.";
+    message002.innerHTML = "";
+    score001.innerHTML = a++;
+    message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+    }
+    
+    function q2i() {
+    message003.innerHTML = "Incorrect. recursion.";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+    }
+    
+    function q3c() {
+    message003.innerHTML = "Correct. string";
+    message002.innerHTML = "";
+    score001.innerHTML = b++;
+    message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+    }
+    
+    function q3i() {
+    message003.innerHTML = "Incorrect. string.";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+    }
+    
+    
+    function next001() {
+    if (a == "2") {
+        message001.innerHTML = question001[1];
+        message002.innerHTML = options002;
+        message003.innerHTML = "";
+        number001.innerHTML = a++;
+        message004.innerHTML = "";
+    }
+    
+    else if (a == "3") {
+        message001.innerHTML = question001[2];
+        message002.innerHTML = options003;
+        message003.innerHTML = "";
+        number001.innerHTML = a++;
+        message004.innerHTML = "";
+    }
+    
+    }
+    
+    update = setInterval("timer001()", 1000);
+    
+    function repeat001() {
+    location.reload();
 
 function check(){
-
+var question1= document.quiz.question1.value;
 var question2= document.quiz.question2.value;
 var question3= document.quiz.question3.value;
 var question4= document.quiz.question4.value;
 var question5= document.quiz.question5.value;
 var correct = 0;
 
-if( question1 =="providence"){
+if( question1 ==" Recurcion"){
 
     correct++;
 }
 
-if( question2=="Hartford"){
+if( question2=="Function"){
 
     correct++;
 }
 
-f( question3=="Albany"){
+f( question3=="Control"){
 
     correct++;
 }
 
-f( question4=="Albany"){
+f( question4=="String"){
 
     correct++;
 }
-f( question4=="Albany"){
+f( question4=="Expression"){
 
     correct++;
 }
 
-var messages = {" Great job!", " That'sjust okay", " You really need to do better next time"};
-var pictures["img/win.gif" "img/okay.gif" "img/lose.gif"];
 
 var range;
 
 if ( correct = 1){
-    range =2;
-}
+    
 if (correct> 0 && correct< 3){
-    range =1;
+ 
 }
 
 if (correct>2){
-    range =0;
+  
 }
 
     document.getElementById("after_Submit").style.visibility="visible"

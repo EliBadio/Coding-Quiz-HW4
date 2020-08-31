@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz on Timer</title>
+    <title>Quiz on Coding</title>
     <link href ="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
+
 <body>
-    <h1 class="startTime"></h1>
-    <div id="main"></div>
-    
+
+    <div id="frame001">
+        <div id="font001">
+            <h2>True Or False Quiz</h2><text>Question: <text id="number001">0</text></text><br />
+            <text>Score: <text id="score001">0</text></text><br />
+            <text>Time: <text id="time001">200</text></text><br />
+            <hr />
+            <div id="disappear001">
+                <button class="buttons01" onclick="start01()"> Start </button>
+                
+            </div>
+            
     <h1> Main Quiz</h1>
     <form id = "quiz" name = "quiz">
 
@@ -34,12 +44,13 @@
         
         
         <p> Blank is a fragment that produces a value?</p>
-        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Epression<br>
+        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Expression<br>
         <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Bidings<br>
         
 
         <input id =" btton" type = "button" value =" I'm finished!" onclick = "check();">
     </form>
+</div>
     
     <div id ="after_Submit">
     <p id ="message"> </p>
