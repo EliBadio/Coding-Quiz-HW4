@@ -3,64 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz on Coding</title>
+    <title>Coding Quiz For Fun</title>
     <link href ="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 </head>
-
-
 <body>
-
-    <div id="frame001">
-        <div id="font001">
-            <h2>Function Quiz</h2><text>Question: <text id="number001">0</text></text><br />
-            <text>Score: <text id="score001">0</text></text><br />
-            <text>Time: <text id="time001">200</text></text><br />
-            <hr />
-            <div id="disappear001">
-                <button class="buttons01" onclick="start01()"> Start </button>
-                
-            </div>
-
-    <h1> Main Quiz</h1>
-    <form id = "quiz" name = "quiz">
-
-      
-
-        <p> What is a function that call itself?</p>
-        <input id="textbox" type= "text" name= "questions1">
-
-        <p> A regular binding where the value of the biding is a function </p>
-        <input type="radio" id= "mc" name= "questions2" value = "Hartford"> Function<br>
-        <input type="radio" id= "mc" name= "questions2" value = "Hartford"> Array<br>
+    <div class="container">
+        <h2> Coding Bootcamp Quiz</h2><br />
         
-        <p> When statements on a program are executed from top to botton, it is an example of?</p>
-        <input type="radio" id= "mc" name= "questions3" value = "Hartford"> Control flow<br>
-        <input type="radio" id= "mc" name= "questions3" value = "Hartford"> Object<br>
-       
-        <p> What type of data use to represent text?</p>
-        <input type="radio" id= "mc" name= "questions4" value = "Hartford"> Float<br>
-        <input type="radio" id= "mc" name= "questions4" value = "Hartford"> String<br>
+        <button class="start" id="start"> Start Quiz</button>
         
+        <text id="displayTime"></text></br/>
         
-        <p> Blank is a fragment that produces a value?</p>
-        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Expression<br>
-        <input type="radio" id= "mc" name= "questions5" value = "Hartford"> Bidings<br>
-        
-
-        <input id =" btton" type = "button" value =" I'm finished!" onclick = "check();">
-    </form>
-</div>
-    
-    <div id ="after_Submit">
-    <p id ="message"> </p>
-    <img id =" picture">
-    
     </div>
-        <p id ="number_Correct"> </p>
-    </div>
-
-
-     <script src="script.js"> </script>
+    
+    <h2 id="test_status"></h2>
+    <div id="test"></div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
